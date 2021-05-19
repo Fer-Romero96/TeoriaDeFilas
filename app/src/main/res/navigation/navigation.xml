@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainMenuFragment">
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="edu.itesm.modelosdefilasdeespera.view.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_MM1Fragment"
+            app:destination="@id/MM1Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_MMSFragment"
+            app:destination="@id/MMSFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_MMsKFragment"
+            app:destination="@id/MMsKFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_MG1Fragment"
+            app:destination="@id/MG1Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/MM1Fragment"
+        android:name="edu.itesm.modelosdefilasdeespera.MM1Fragment"
+        android:label="fragment_m_m1"
+        tools:layout="@layout/fragment_m_m1" />
+    <fragment
+        android:id="@+id/MMSFragment"
+        android:name="edu.itesm.modelosdefilasdeespera.MMSFragment"
+        android:label="fragment_m_m_s"
+        tools:layout="@layout/fragment_m_m_s" />
+    <fragment
+        android:id="@+id/MMsKFragment"
+        android:name="edu.itesm.modelosdefilasdeespera.MMsKFragment"
+        android:label="fragment_m_ms_k"
+        tools:layout="@layout/fragment_m_ms_k" />
+    <fragment
+        android:id="@+id/MG1Fragment"
+        android:name="edu.itesm.modelosdefilasdeespera.MG1Fragment"
+        android:label="fragment_m_g1"
+        tools:layout="@layout/fragment_m_g1" />
+</navigation>
