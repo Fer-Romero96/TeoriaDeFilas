@@ -33,19 +33,19 @@ class MainMenuFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         binding.CardViewMM1.setOnClickListener {
-            view?.findNavController()?.navigate(R.id.action_mainMenuFragment_to_MM1Fragment)
+            view?.findNavController()?.navigate(R.id.action_mainMenuFragment_to_MM1MenuFragment)
         }
 
         binding.CardViewMMs.setOnClickListener {
-            view?.findNavController()?.navigate(R.id.action_mainMenuFragment_to_MMSFragment)
+            view?.findNavController()?.navigate(R.id.action_mainMenuFragment_to_MMSMenuFragment)
         }
 
         binding.CardViewMMsK.setOnClickListener {
-            view?.findNavController()?.navigate(R.id.action_mainMenuFragment_to_MMsKFragment)
+            view?.findNavController()?.navigate(R.id.action_mainMenuFragment_to_MMsKMenuFragment)
         }
 
         binding.CardVIewMG1.setOnClickListener {
-            view?.findNavController()?.navigate(R.id.action_mainMenuFragment_to_MG1Fragment)
+            view?.findNavController()?.navigate(R.id.action_mainMenuFragment_to_MG1MenuFragment)
         }
     }
 

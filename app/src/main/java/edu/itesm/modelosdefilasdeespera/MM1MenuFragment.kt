@@ -6,7 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class MMsKFragment : Fragment() {
+/**
+ * A simple [Fragment] subclass.
+ * Use the [MM1MenuFragment.newInstance] factory method to
+ * create an instance of this fragment.
+ */
+class MM1MenuFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +23,7 @@ class MMsKFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_m_ms_k, container, false)
+        return inflater.inflate(R.layout.fragment_m_m1_menu, container, false)
     }
 
 }

@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 
 
-class MG1Fragment : Fragment() {
+class MG1MenuFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,7 +19,7 @@ class MG1Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_m_g1, container, false)
+        return inflater.inflate(R.layout.fragment_m_g1_menu, container, false)
     }
 
 }

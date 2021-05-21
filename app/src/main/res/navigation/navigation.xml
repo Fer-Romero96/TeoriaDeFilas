@@ -11,52 +11,52 @@
         android:label="fragment_main_menu"
         tools:layout="@layout/fragment_main_menu" >
         <action
-            android:id="@+id/action_mainMenuFragment_to_MM1Fragment"
-            app:destination="@id/MM1Fragment"
+            android:id="@+id/action_mainMenuFragment_to_MM1MenuFragment"
+            app:destination="@id/MM1MenuFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"
             app:popEnterAnim="@android:anim/slide_in_left"
             app:popExitAnim="@android:anim/slide_out_right" />
         <action
-            android:id="@+id/action_mainMenuFragment_to_MMSFragment"
-            app:destination="@id/MMSFragment"
+            android:id="@+id/action_mainMenuFragment_to_MMSMenuFragment"
+            app:destination="@id/MMSMenuFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"
             app:popEnterAnim="@android:anim/slide_in_left"
             app:popExitAnim="@android:anim/slide_out_right" />
         <action
-            android:id="@+id/action_mainMenuFragment_to_MMsKFragment"
-            app:destination="@id/MMsKFragment"
+            android:id="@+id/action_mainMenuFragment_to_MMsKMenuFragment"
+            app:destination="@id/MMsKMenuFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"
             app:popEnterAnim="@android:anim/slide_in_left"
             app:popExitAnim="@android:anim/slide_out_right" />
         <action
-            android:id="@+id/action_mainMenuFragment_to_MG1Fragment"
-            app:destination="@id/MG1Fragment"
+            android:id="@+id/action_mainMenuFragment_to_MG1MenuFragment"
+            app:destination="@id/MG1MenuFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"
             app:popEnterAnim="@android:anim/slide_in_left"
             app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
-        android:id="@+id/MM1Fragment"
-        android:name="edu.itesm.modelosdefilasdeespera.MM1Fragment"
+        android:id="@+id/MM1MenuFragment"
+        android:name="edu.itesm.modelosdefilasdeespera.MM1MenuFragment"
         android:label="fragment_m_m1"
-        tools:layout="@layout/fragment_m_m1" />
+        tools:layout="@layout/fragment_m_m1_menu" />
     <fragment
-        android:id="@+id/MMSFragment"
-        android:name="edu.itesm.modelosdefilasdeespera.MMSFragment"
+        android:id="@+id/MMSMenuFragment"
+        android:name="edu.itesm.modelosdefilasdeespera.MMSMenuFragment"
         android:label="fragment_m_m_s"
-        tools:layout="@layout/fragment_m_m_s" />
+        tools:layout="@layout/fragment_m_m_s_menu" />
     <fragment
-        android:id="@+id/MMsKFragment"
-        android:name="edu.itesm.modelosdefilasdeespera.MMsKFragment"
+        android:id="@+id/MMsKMenuFragment"
+        android:name="edu.itesm.modelosdefilasdeespera.MMsKMenuFragment"
         android:label="fragment_m_ms_k"
-        tools:layout="@layout/fragment_m_ms_k" />
+        tools:layout="@layout/fragment_m_ms_k_menu" />
     <fragment
-        android:id="@+id/MG1Fragment"
-        android:name="edu.itesm.modelosdefilasdeespera.MG1Fragment"
+        android:id="@+id/MG1MenuFragment"
+        android:name="edu.itesm.modelosdefilasdeespera.MG1MenuFragment"
         android:label="fragment_m_g1"
-        tools:layout="@layout/fragment_m_g1" />
+        tools:layout="@layout/fragment_m_g1_menu" />
 </navigation>

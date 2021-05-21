@@ -59,7 +59,7 @@
                     android:layout_marginTop="10dp"
                     android:text="@string/DMM1"
                     android:textAlignment="center"
-                    android:textColor="@color/morado_obscuro"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="italic" />
             </LinearLayout>
@@ -99,7 +99,7 @@
                     android:layout_marginTop="10dp"
                     android:text="@string/DMMs"
                     android:textAlignment="center"
-                    android:textColor="@color/morado_obscuro"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="italic" />
             </LinearLayout>
@@ -139,7 +139,7 @@
                     android:layout_marginTop="10dp"
                     android:text="@string/DMMsK"
                     android:textAlignment="center"
-                    android:textColor="@color/morado_obscuro"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="italic" />
             </LinearLayout>
@@ -179,7 +179,7 @@
                     android:layout_marginTop="10dp"
                     android:text="@string/DMG1"
                     android:textAlignment="center"
-                    android:textColor="@color/morado_obscuro"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="italic" />
             </LinearLayout>
