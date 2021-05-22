@@ -363,4 +363,5 @@
             android:layout_marginRight="20dp"
             android:background="@color/naranja" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

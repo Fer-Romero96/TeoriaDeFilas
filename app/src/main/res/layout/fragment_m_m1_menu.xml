@@ -32,6 +32,13 @@
             android:textSize="34sp"
             android:textStyle="bold" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/naranja" />
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
