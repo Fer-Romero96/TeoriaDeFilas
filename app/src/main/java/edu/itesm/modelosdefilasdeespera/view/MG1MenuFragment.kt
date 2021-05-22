@@ -1,12 +1,14 @@
-package edu.itesm.modelosdefilasdeespera
+package edu.itesm.modelosdefilasdeespera.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import edu.itesm.modelosdefilasdeespera.R
 
-class MMSMenuFragment : Fragment() {
+
+class MG1MenuFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +20,7 @@ class MMSMenuFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_m_m_s_menu, container, false)
+        return inflater.inflate(R.layout.fragment_m_g1_menu, container, false)
     }
 
 }

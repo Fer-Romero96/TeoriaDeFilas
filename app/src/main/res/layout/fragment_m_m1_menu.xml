@@ -7,7 +7,7 @@
     android:layout_marginTop="5dp"
     android:layout_marginBottom="5dp"
     android:background="@color/gris_claro"
-    tools:context=".MM1MenuFragment">
+    tools:context=".view.MM1MenuFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -157,18 +157,6 @@
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/validarmm1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/morado_obscuro"
-            android:text="Validar"
-            android:textColor="@color/naranja"
-            android:textSize="16sp" />
-
-        <Button
             android:id="@+id/calcularmm1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -178,7 +166,8 @@
             android:backgroundTint="@color/morado_obscuro"
             android:text="Calcular"
             android:textColor="@color/naranja"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:visibility="visible" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

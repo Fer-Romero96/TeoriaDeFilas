@@ -41,22 +41,95 @@
     </fragment>
     <fragment
         android:id="@+id/MM1MenuFragment"
-        android:name="edu.itesm.modelosdefilasdeespera.MM1MenuFragment"
+        android:name="edu.itesm.modelosdefilasdeespera.view.MM1MenuFragment"
         android:label="fragment_m_m1"
-        tools:layout="@layout/fragment_m_m1_menu" />
+        tools:layout="@layout/fragment_m_m1_menu" >
+        <action
+            android:id="@+id/action_MM1MenuFragment_to_MM1ModelFragment"
+            app:destination="@id/MM1ModelFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
     <fragment
         android:id="@+id/MMSMenuFragment"
-        android:name="edu.itesm.modelosdefilasdeespera.MMSMenuFragment"
+        android:name="edu.itesm.modelosdefilasdeespera.view.MMSMenuFragment"
         android:label="fragment_m_m_s"
-        tools:layout="@layout/fragment_m_m_s_menu" />
+        tools:layout="@layout/fragment_m_m_s_menu" >
+        <action
+            android:id="@+id/action_MMSMenuFragment_to_MMSModelFragment"
+            app:destination="@id/MMSModelFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
     <fragment
         android:id="@+id/MMsKMenuFragment"
-        android:name="edu.itesm.modelosdefilasdeespera.MMsKMenuFragment"
+        android:name="edu.itesm.modelosdefilasdeespera.view.MMsKMenuFragment"
         android:label="fragment_m_ms_k"
-        tools:layout="@layout/fragment_m_ms_k_menu" />
+        tools:layout="@layout/fragment_m_ms_k_menu" >
+        <action
+            android:id="@+id/action_MMsKMenuFragment_to_MMsKModelFragment"
+            app:destination="@id/MMsKModelFragment" />
+    </fragment>
     <fragment
         android:id="@+id/MG1MenuFragment"
-        android:name="edu.itesm.modelosdefilasdeespera.MG1MenuFragment"
+        android:name="edu.itesm.modelosdefilasdeespera.view.MG1MenuFragment"
         android:label="fragment_m_g1"
-        tools:layout="@layout/fragment_m_g1_menu" />
+        tools:layout="@layout/fragment_m_g1_menu" >
+        <action
+            android:id="@+id/action_MG1MenuFragment_to_MG1ModelFragment"
+            app:destination="@id/MG1ModelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MM1ModelFragment"
+        android:name="edu.itesm.modelosdefilasdeespera.viewmodel.MM1ModelFragment"
+        android:label="fragment_m_m1_model"
+        tools:layout="@layout/fragment_m_m1_model" >
+        <argument
+            android:name="lambda"
+            app:argType="string" />
+        <argument
+            android:name="mu"
+            app:argType="string" />
+        <argument
+            android:name="cs"
+            app:argType="string" />
+        <argument
+            android:name="cw"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/MMSModelFragment"
+        android:name="edu.itesm.modelosdefilasdeespera.viewmodel.MMSModelFragment"
+        android:label="fragment_m_m_s_model"
+        tools:layout="@layout/fragment_m_m_s_model" >
+        <argument
+            android:name="lambda"
+            app:argType="string" />
+        <argument
+            android:name="mu"
+            app:argType="string" />
+        <argument
+            android:name="s"
+            app:argType="string" />
+        <argument
+            android:name="cs"
+            app:argType="string" />
+        <argument
+            android:name="cw"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/MMsKModelFragment"
+        android:name="edu.itesm.modelosdefilasdeespera.viewmodel.MMsKModelFragment"
+        android:label="fragment_m_ms_k_model"
+        tools:layout="@layout/fragment_m_ms_k_model" />
+    <fragment
+        android:id="@+id/MG1ModelFragment"
+        android:name="edu.itesm.modelosdefilasdeespera.viewmodel.MG1ModelFragment"
+        android:label="fragment_m_g1_model"
+        tools:layout="@layout/fragment_m_g1_model" />
 </navigation>
