@@ -72,7 +72,11 @@
         tools:layout="@layout/fragment_m_ms_k_menu" >
         <action
             android:id="@+id/action_MMsKMenuFragment_to_MMsKModelFragment"
-            app:destination="@id/MMsKModelFragment" />
+            app:destination="@id/MMsKModelFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/MG1MenuFragment"
@@ -81,7 +85,11 @@
         tools:layout="@layout/fragment_m_g1_menu" >
         <action
             android:id="@+id/action_MG1MenuFragment_to_MG1ModelFragment"
-            app:destination="@id/MG1ModelFragment" />
+            app:destination="@id/MG1ModelFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/MM1ModelFragment"
@@ -126,10 +134,48 @@
         android:id="@+id/MMsKModelFragment"
         android:name="edu.itesm.modelosdefilasdeespera.viewmodel.MMsKModelFragment"
         android:label="fragment_m_ms_k_model"
-        tools:layout="@layout/fragment_m_ms_k_model" />
+        tools:layout="@layout/fragment_m_ms_k_model" >
+        <argument
+            android:name="lambda"
+            app:argType="string" />
+        <argument
+            android:name="mu"
+            app:argType="string" />
+        <argument
+            android:name="s"
+            app:argType="string" />
+        <argument
+            android:name="k"
+            app:argType="string" />
+        <argument
+            android:name="cs"
+            app:argType="string" />
+        <argument
+            android:name="cw"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/MG1ModelFragment"
         android:name="edu.itesm.modelosdefilasdeespera.viewmodel.MG1ModelFragment"
         android:label="fragment_m_g1_model"
-        tools:layout="@layout/fragment_m_g1_model" />
+        tools:layout="@layout/fragment_m_g1_model" >
+        <argument
+            android:name="lambda"
+            app:argType="string" />
+        <argument
+            android:name="mu"
+            app:argType="string" />
+        <argument
+            android:name="s"
+            app:argType="string" />
+        <argument
+            android:name="k"
+            app:argType="string" />
+        <argument
+            android:name="cs"
+            app:argType="string" />
+        <argument
+            android:name="cw"
+            app:argType="string" />
+    </fragment>
 </navigation>

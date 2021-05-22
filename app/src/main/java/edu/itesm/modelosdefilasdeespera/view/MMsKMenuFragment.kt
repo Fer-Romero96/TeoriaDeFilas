@@ -5,9 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import edu.itesm.modelosdefilasdeespera.R
+import androidx.appcompat.app.AlertDialog
+import androidx.navigation.findNavController
+import edu.itesm.modelosdefilasdeespera.databinding.FragmentMMsKMenuBinding
 
 class MMsKMenuFragment : Fragment() {
+
+    private var _binding : FragmentMMsKMenuBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,7 +24,58 @@ class MMsKMenuFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_m_ms_k_menu, container, false)
+        _binding = FragmentMMsKMenuBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+        val lambda = binding.TasaLlegadammsk
+        val mu = binding.TasaServiciommsk
+        val s = binding.NumeroCanalesmmsk
+        val k = binding.LimiteSistemammsk
+        val cs = binding.CostoServiciommsk
+        val cw = binding.CostoTiempoEsperammsk
+
+        binding.calcularmmsk.setOnClickListener {
+
+            if(lambda.length() != 0 && mu.length() != 0 && cs.length() != 0 && cw.length() != 0
+                && s.length() != 0 && k.length() != 0){
+
+                val p = lambda.text.toString().toDouble()/mu.text.toString().toDouble()
+
+                if(p < 1){
+                    val action = MMsKMenuFragmentDirections.actionMMsKMenuFragmentToMMsKModelFragment(lambda.text.toString(),
+                        mu.text.toString(),
+                        s.text.toString(),
+                        k.text.toString(),
+                        cs.text.toString(),
+                        cw.text.toString())
+                    view?.findNavController()?.navigate(action)
+                }else{
+                    alertas("No Estable","El sistema no es estable p < 1")
+                }
+
+            }else{
+                alertas("Campos Vacios","Faltan Llenar Algunos de Los Campos Especificados")
+            }
+        }
+    }
+
+    private fun alertas(titulo: String , mensaje : String){
+        val builder = AlertDialog.Builder(requireActivity())
+        with(builder){
+            setTitle(titulo)
+            setMessage(mensaje)
+            setPositiveButton("Ok",null)
+            show()
+        }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 }

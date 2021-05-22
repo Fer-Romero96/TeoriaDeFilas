@@ -31,13 +31,14 @@ class MMSModelFragment : Fragment() {
         val lambda = args.lambda
         val mu = args.mu
         val s = args.s
-        val cs = args.cw
-        val cw = args.cs
+        val cs = args.cs
+        val cw = args.cw
 
         Log.i("lamda", args.lambda)
         Log.i("mu", args.mu)
         Log.i("s", args.s)
-        Log.i("cw", args.cw)
         Log.i("cs", args.cs)
+        Log.i("cw", args.cw)
+
     }
 }
