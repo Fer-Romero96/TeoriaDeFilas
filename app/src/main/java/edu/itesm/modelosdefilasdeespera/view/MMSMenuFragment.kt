@@ -33,6 +33,7 @@ class MMSMenuFragment : Fragment() {
 
         val lambda = binding.TasaLlegadamms
         val mu = binding.TasaServiciomms
+        val n = binding.Clientesmms
         val s = binding.NumeroCanalesmms
         val cs = binding.CostoServiciomms
         val cw = binding.CostoTiempoEsperamms
@@ -40,13 +41,15 @@ class MMSMenuFragment : Fragment() {
         binding.calcularmms.setOnClickListener {
 
             if(lambda.length() != 0 && mu.length() != 0 && cs.length() != 0 && cw.length() != 0
-                && s.length() != 0){
+                && s.length() != 0 && n.length() != 0){
 
-                val p = lambda.text.toString().toDouble()/mu.text.toString().toDouble()
+                val p = lambda.text.toString().toDouble()/(mu.text.toString().toDouble()*s.text
+                    .toString().toDouble())
 
                 if(p < 1){
                     val action =  MMSMenuFragmentDirections.actionMMSMenuFragmentToMMSModelFragment(lambda.text.toString(),
                         mu.text.toString(),
+                        n.text.toString(),
                         s.text.toString(),
                         cs.text.toString(),
                         cw.text.toString())
@@ -77,5 +80,4 @@ class MMSMenuFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 }
