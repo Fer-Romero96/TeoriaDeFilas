@@ -33,6 +33,7 @@ class MMsKMenuFragment : Fragment() {
 
         val lambda = binding.TasaLlegadammsk
         val mu = binding.TasaServiciommsk
+        val n = binding.Clientesmmsk
         val s = binding.NumeroCanalesmmsk
         val k = binding.LimiteSistemammsk
         val cs = binding.CostoServiciommsk
@@ -41,18 +42,20 @@ class MMsKMenuFragment : Fragment() {
         binding.calcularmmsk.setOnClickListener {
 
             if(lambda.length() != 0 && mu.length() != 0 && cs.length() != 0 && cw.length() != 0
-                && s.length() != 0 && k.length() != 0){
+                && s.length() != 0 && k.length() != 0 && n.length() != 0){
 
-                val p = lambda.text.toString().toDouble()/mu.text.toString().toDouble()
+                val p = lambda.text.toString().toDouble()/(mu.text.toString().toDouble()*s.text.toString().toDouble())
 
                 if(p < 1){
                     val action = MMsKMenuFragmentDirections.actionMMsKMenuFragmentToMMsKModelFragment(lambda.text.toString(),
                         mu.text.toString(),
+                        n.text.toString(),
                         s.text.toString(),
                         k.text.toString(),
                         cs.text.toString(),
                         cw.text.toString())
                     view?.findNavController()?.navigate(action)
+
                 }else{
                     alertas("No Estable","El sistema no es estable p < 1")
                 }

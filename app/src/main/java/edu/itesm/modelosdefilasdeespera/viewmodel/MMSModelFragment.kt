@@ -102,7 +102,7 @@ class MMSModelFragment : Fragment() {
     }
 
     private fun lq(p0 : Double, lambda: Double, mu: Double, p : Double , s : Int) : Double {
-        return p0 * (lambda/mu).pow(s) * p / factorial(s) * (1 - p).pow(2)
+        return (p0 * (lambda/mu).pow(s) * p) / (factorial(s) * (1 - p).pow(2))
     }
 
     private fun l(lq : Double, lambda: Double, mu : Double) : Double {

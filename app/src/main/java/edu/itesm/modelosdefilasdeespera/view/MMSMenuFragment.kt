@@ -43,8 +43,7 @@ class MMSMenuFragment : Fragment() {
             if(lambda.length() != 0 && mu.length() != 0 && cs.length() != 0 && cw.length() != 0
                 && s.length() != 0 && n.length() != 0){
 
-                val p = lambda.text.toString().toDouble()/(mu.text.toString().toDouble()*s.text
-                    .toString().toDouble())
+                val p = lambda.text.toString().toDouble()/(mu.text.toString().toDouble()*s.text.toString().toDouble())
 
                 if(p < 1){
                     val action =  MMSMenuFragmentDirections.actionMMSMenuFragmentToMMSModelFragment(lambda.text.toString(),
