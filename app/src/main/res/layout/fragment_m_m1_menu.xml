@@ -144,7 +144,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/naranja"
             android:hint="0.0"
-            android:inputType="numberDecimal"
+            android:inputType="number"
             android:textColor="@color/black" />
 
         <LinearLayout

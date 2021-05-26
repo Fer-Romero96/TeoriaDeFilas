@@ -38,6 +38,13 @@
             app:exitAnim="@android:anim/slide_out_right"
             app:popEnterAnim="@android:anim/slide_in_left"
             app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_ME1Fragment"
+            app:destination="@id/ME1Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/MM1MenuFragment"
@@ -179,6 +186,43 @@
             app:argType="string" />
         <argument
             android:name="sigma"
+            app:argType="string" />
+        <argument
+            android:name="cs"
+            app:argType="string" />
+        <argument
+            android:name="cw"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/ME1Fragment"
+        android:name="edu.itesm.modelosdefilasdeespera.view.ME1MenuFragment"
+        android:label="fragment_m_e1"
+        tools:layout="@layout/fragment_m_e1_menu" >
+        <action
+            android:id="@+id/action_ME1Fragment_to_ME1ModelFragment"
+            app:destination="@id/ME1ModelFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/ME1ModelFragment"
+        android:name="edu.itesm.modelosdefilasdeespera.viewmodel.ME1ModelFragment"
+        android:label="fragment_m_e1_model"
+        tools:layout="@layout/fragment_m_e1_model" >
+        <argument
+            android:name="lambda"
+            app:argType="string" />
+        <argument
+            android:name="mu"
+            app:argType="string" />
+        <argument
+            android:name="n"
+            app:argType="string" />
+        <argument
+            android:name="k"
             app:argType="string" />
         <argument
             android:name="cs"

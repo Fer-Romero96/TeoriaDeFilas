@@ -8,12 +8,12 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import androidx.navigation.findNavController
 import edu.itesm.modelosdefilasdeespera.R
-import edu.itesm.modelosdefilasdeespera.databinding.FragmentMG1MenuBinding
+import edu.itesm.modelosdefilasdeespera.databinding.FragmentME1MenuBinding
 
-class MG1MenuFragment : Fragment() {
+class ME1MenuFragment : Fragment() {
 
-    private var _binding : FragmentMG1MenuBinding? = null
-    private val binding get() =  _binding!!
+    private var _binding : FragmentME1MenuBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,43 +25,47 @@ class MG1MenuFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentMG1MenuBinding.inflate(inflater, container, false)
-        return binding.root
+        _binding = FragmentME1MenuBinding.inflate(inflater, container, false)
+        return  binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        val lambda = binding.TasaLlegadamg1
-        val mu = binding.TasaServiciomg1
-        val n = binding.Clientesmg1
-        val sigma = binding.DesviacionEstandarmg1
-        val cs = binding.CostoServiciomg1
-        val cw = binding.CostoTiempoEsperamg1
+        val lambda = binding.TasaLlegadamk1
+        val mu = binding.TasaServiciomk1
+        val n = binding.Clientesmk1
+        val k = binding.Ordenmk1
+        val cs = binding.CostoServiciomk1
+        val cw = binding.CostoTiempoEsperamk1
 
-        binding.calcularmg1.setOnClickListener {
+        binding.calcularmk1.setOnClickListener {
 
             if(lambda.length() != 0 && mu.length() != 0 && cs.length() != 0 && cw.length() != 0
-                && n.length() != 0 && sigma.length() != 0){
+                && k.length() != 0 && n.length() != 0){
 
                 val p = lambda.text.toString().toDouble()/mu.text.toString().toDouble()
 
-                if( p < 1){
-                    val action = MG1MenuFragmentDirections.actionMG1MenuFragmentToMG1ModelFragment(lambda.text.toString(),
+                if(p < 1){
+
+                    val action = ME1MenuFragmentDirections.actionME1FragmentToME1ModelFragment(lambda.text.toString(),
                         mu.text.toString(),
                         n.text.toString(),
-                        sigma.text.toString(),
+                        k.text.toString(),
                         cs.text.toString(),
                         cw.text.toString())
                     view?.findNavController()?.navigate(action)
-                }else{
+
+                }else {
                     alertas("No Estable","El sistema no es estable p < 1")
                 }
 
-            } else {
+            } else{
                 alertas("Campos Vacios","Faltan Llenar Algunos de Los Campos Especificados")
             }
+
         }
+
     }
 
     private fun alertas(titulo: String , mensaje : String){

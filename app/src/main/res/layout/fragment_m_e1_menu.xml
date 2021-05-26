@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="5dp"
     android:layout_marginBottom="5dp"
     android:background="@color/gris_claro"
-    tools:context=".view.MG1MenuFragment">
+    tools:context=".view.ME1MenuFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="match_parent"
@@ -21,7 +26,7 @@
             android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:background="@color/morado_obscuro"
-            android:text="M/G/1"
+            android:text="M/E/1"
             android:textAlignment="center"
             android:textColor="@color/naranja"
             android:textSize="34sp"
@@ -59,7 +64,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/TasaLlegadamg1"
+            android:id="@+id/TasaLlegadamk1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
@@ -95,7 +100,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/TasaServiciomg1"
+            android:id="@+id/TasaServiciomk1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
@@ -131,7 +136,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/Clientesmg1"
+            android:id="@+id/Clientesmk1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
@@ -154,20 +159,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/sigma" />
+                android:src="@drawable/k" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Varianza"
+                android:text="Orden"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
         </LinearLayout>
 
         <EditText
-            android:id="@+id/DesviacionEstandarmg1"
+            android:id="@+id/Ordenmk1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
@@ -175,7 +180,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/naranja"
             android:hint="0.0"
-            android:inputType="numberDecimal"
+            android:inputType="number"
             android:textColor="@color/black" />
 
         <LinearLayout
@@ -203,7 +208,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/CostoServiciomg1"
+            android:id="@+id/CostoServiciomk1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
@@ -239,7 +244,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/CostoTiempoEsperamg1"
+            android:id="@+id/CostoTiempoEsperamk1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
@@ -251,7 +256,7 @@
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/calcularmg1"
+            android:id="@+id/calcularmk1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"

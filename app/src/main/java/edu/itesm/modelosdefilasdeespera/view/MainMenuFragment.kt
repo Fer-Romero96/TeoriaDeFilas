@@ -47,6 +47,10 @@ class MainMenuFragment : Fragment() {
         binding.CardVIewMG1.setOnClickListener {
             view?.findNavController()?.navigate(R.id.action_mainMenuFragment_to_MG1MenuFragment)
         }
+
+        binding.CardVIewME1.setOnClickListener {
+            view?.findNavController()?.navigate(R.id.action_mainMenuFragment_to_ME1Fragment)
+        }
     }
 
     override fun onDestroyView() {
