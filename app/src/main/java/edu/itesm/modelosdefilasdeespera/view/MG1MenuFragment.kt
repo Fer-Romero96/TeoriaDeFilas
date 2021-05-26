@@ -35,23 +35,23 @@ class MG1MenuFragment : Fragment() {
 
         val lambda = binding.TasaLlegadamg1
         val mu = binding.TasaServiciomg1
-        val s = binding.NumeroCanalesmg1
-        val k = binding.LimiteSistemamg1
+        val n = binding.Clientesmg1
+        val sigma = binding.DesviacionEstandarmg1
         val cs = binding.CostoServiciomg1
         val cw = binding.CostoTiempoEsperamg1
 
         binding.calcularmg1.setOnClickListener {
 
             if(lambda.length() != 0 && mu.length() != 0 && cs.length() != 0 && cw.length() != 0
-                && s.length() != 0 && k.length() != 0){
+                && n.length() != 0 && sigma.length() != 0){
 
                 val p = lambda.text.toString().toDouble()/mu.text.toString().toDouble()
 
                 if( p < 1){
                     val action = MG1MenuFragmentDirections.actionMG1MenuFragmentToMG1ModelFragment(lambda.text.toString(),
                         mu.text.toString(),
-                        s.text.toString(),
-                        k.text.toString(),
+                        n.text.toString(),
+                        sigma.text.toString(),
                         cs.text.toString(),
                         cw.text.toString())
                     view?.findNavController()?.navigate(action)
@@ -59,7 +59,7 @@ class MG1MenuFragment : Fragment() {
                     alertas("No Estable","El sistema no es estable p < 1")
                 }
 
-            } else{
+            } else {
                 alertas("Campos Vacios","Faltan Llenar Algunos de Los Campos Especificados")
             }
         }

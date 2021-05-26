@@ -6,5 +6,5 @@
     <string name="DMM1">Población infinita, capacidad del sistema infinito, un canal de servicio.</string>
     <string name="DMMs">Población infinita, capacidad del sistema infinito, S canales de servicio.</string>
     <string name="DMMsK">Población infinita, capacidad del sistema limitado a K, S canales de servicio.</string>
-    <string name="DMG1">Población infinita, capacidad del sistema limitado a K, S canales de servicio.</string>
+    <string name="DMG1">Población infinita, capacidad del sistema infinito, un canal de servicio.</string>
 </resources>

@@ -41,7 +41,6 @@ class MM1MenuFragment : Fragment() {
             if(lambda.length() != 0 && mu.length() != 0 && cs.length() != 0 && cw.length() != 0 && n.length() != 0){
 
                 val p = lambda.text.toString().toDouble()/mu.text.toString().toDouble()
-
                 if(p < 1){
                     val action = MM1MenuFragmentDirections.actionMM1MenuFragmentToMM1ModelFragment(lambda.text.toString(),
                         mu.text.toString(),

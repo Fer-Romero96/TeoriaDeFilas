@@ -118,20 +118,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/s" />
+                android:src="@drawable/n" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Numero de Canales"
+                android:text="Clientes"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
         </LinearLayout>
 
         <EditText
-            android:id="@+id/NumeroCanalesmg1"
+            android:id="@+id/Clientesmg1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
@@ -154,20 +154,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/k" />
+                android:src="@drawable/sigma" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Limite del Sistema"
+                android:text="Varianza"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
         </LinearLayout>
 
         <EditText
-            android:id="@+id/LimiteSistemamg1"
+            android:id="@+id/DesviacionEstandarmg1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"

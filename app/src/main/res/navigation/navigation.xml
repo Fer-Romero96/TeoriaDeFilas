@@ -175,10 +175,10 @@
             android:name="mu"
             app:argType="string" />
         <argument
-            android:name="s"
+            android:name="n"
             app:argType="string" />
         <argument
-            android:name="k"
+            android:name="sigma"
             app:argType="string" />
         <argument
             android:name="cs"
