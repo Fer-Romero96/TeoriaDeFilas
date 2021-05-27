@@ -62,7 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Sistema ocupado"
+                android:text="Sistema Ocupado"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
@@ -96,7 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Sistema Vacio"
+                android:text="Sistema Vacío"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
@@ -160,7 +160,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_weight="1"
-            android:text="Numero esperado de unidades"
+            android:text="Numero Esperado de Clientes"
             android:textColor="@color/azul"
             android:textSize="24sp" />
 
@@ -182,7 +182,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="En el sistema"
+                android:text="En el Sistema"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
@@ -216,7 +216,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="En la cola"
+                android:text="En la Cola"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
@@ -245,7 +245,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_weight="1"
-            android:text="Tiempo medio de espera"
+            android:text="Tiempo Medio de Espera"
             android:textColor="@color/azul"
             android:textSize="24sp" />
 
@@ -267,7 +267,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="En el sistema"
+                android:text="En el Sistema"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
@@ -301,7 +301,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="En la cola"
+                android:text="En la Cola"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
@@ -335,7 +335,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Costo total esperado"
+                android:text="Costo Total Esperado"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="18sp" />

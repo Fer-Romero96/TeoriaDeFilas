@@ -34,8 +34,8 @@ class MMSModelFragment : Fragment() {
 
         val lambda = args.lambda.toDouble()
         val mu = args.mu.toDouble()
-        val n = args.n.toInt()
-        val s = args.s.toInt()
+        val n = args.n.toDouble()
+        val s = args.s.toLong()
         val cs = args.cs.toDouble()
         val cw = args.cw.toDouble()
 
@@ -65,27 +65,27 @@ class MMSModelFragment : Fragment() {
 
     }
 
-    private  fun p0( s: Int, lambda: Double, mu: Double, p: Double) : Double {
+    private  fun p0( s: Long, lambda: Double, mu: Double, p: Double) : Double {
         var sum = 0.0
         var aux : Double
         var p0: Double
 
         for(n in 0..s-1){
-            aux = (lambda/mu).pow(n)/factorial(n)
+            aux = (lambda/mu).pow(n.toDouble())/factorial(n)
             sum += aux
         }
 
-        var aux2 = ((lambda/mu).pow(s) / factorial(s)) * (1 / (1 - p))
+        var aux2 = ((lambda/mu).pow(s.toDouble()) / factorial(s)) * (1 / (1 - p))
 
         p0 = (sum + aux2).pow(-1)
 
         return p0
     }
 
-    private fun pn(lambda: Double, mu: Double, s: Int, n: Int, p0: Double): Double {
+    private fun pn(lambda: Double, mu: Double, s: Long, n: Double, p0: Double): Double {
 
         if(n <= 0 && n < s) {
-            return ((lambda / mu).pow(n) / factorial(n)) * p0
+            return ((lambda / mu).pow(n) / factorial(n.toLong())) * p0
 
         }else if(n >= s){
 
@@ -94,15 +94,15 @@ class MMSModelFragment : Fragment() {
         return 0.0
     }
 
-    private fun factorial(num: Int): Long {
+    private fun factorial(num: Long): Long {
         if (num >= 1)
             return num * factorial(num - 1)
         else
             return 1
     }
 
-    private fun lq(p0 : Double, lambda: Double, mu: Double, p : Double , s : Int) : Double {
-        return (p0 * (lambda/mu).pow(s) * p) / (factorial(s) * (1 - p).pow(2))
+    private fun lq(p0 : Double, lambda: Double, mu: Double, p : Double , s : Long) : Double {
+        return (p0 * (lambda/mu).pow(s.toDouble()) * p) / (factorial(s) * (1 - p).pow(2))
     }
 
     private fun l(lq : Double, lambda: Double, mu : Double) : Double {
@@ -117,7 +117,7 @@ class MMSModelFragment : Fragment() {
         return  wq + (1/mu)
     }
 
-    private fun ct(lq: Double, cs: Double, cw : Double, s: Int) : Double {
+    private fun ct(lq: Double, cs: Double, cw : Double, s: Long) : Double {
         return (lq * cw) + (s * cs)
     }
 

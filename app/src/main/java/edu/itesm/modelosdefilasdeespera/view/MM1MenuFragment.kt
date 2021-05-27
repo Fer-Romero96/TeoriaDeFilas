@@ -49,11 +49,12 @@ class MM1MenuFragment : Fragment() {
                         cw.text.toString())
                     view?.findNavController()?.navigate(action)
                 }else{
-                    alertas("No Estable","Se requiere que el sistema cumpla con p < 1")
+                    alertas("Sistema NO Estable","El sistema no es estable debido a que Rho no es" +
+                            " menor a uno | Rho Actual: $p")
                 }
 
             } else{
-                alertas("Campos Vacios","Faltan Llenar Algunos de Los Campos Especificados")
+                alertas("Campos Faltantes","Falta completar algunos de los campos anteriores")
             }
         }
     }

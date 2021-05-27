@@ -54,7 +54,7 @@ class MMsKModelFragment : Fragment() {
 
         if(n != k){
             alertas("Lambda NO Efectiva","Se recomienda que n sea igual a k para conseguir la " +
-                    "tasa efectiva de arrivo")
+                    "tasa efectiva de arribo")
         }
 
         val p = lambda/(s * mu)

@@ -35,7 +35,7 @@ class MM1ModelFragment : Fragment() {
 
         val lambda = args.lambda.toDouble()
         val mu = args.mu.toDouble()
-        val n = args.n.toInt()
+        val n = args.n.toLong()
         val cs = args.cs.toDouble()
         val cw = args.cw.toDouble()
 
@@ -51,7 +51,7 @@ class MM1ModelFragment : Fragment() {
         val p0 = 1 - p
         binding.tvmm1p0.text = p0.toString()
 
-        val pn = (1 - p) * p.pow(n)
+        val pn = (1 - p) * p.pow(n.toDouble())
         binding.tvmm1pn.text = pn.toString()
 
         val lq = lq(lambda, mu)
